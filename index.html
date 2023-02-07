@@ -15,8 +15,50 @@
       <h1>Picture This!</h1>
       <h4>My Really Cool Blog Post</h4>
     </div>
-    <img src="images/museum.jpg" alt="placeholder">
 
+    <!-- Acuerdate de probar y testear -->
+    <picture>
+      <source srcset="
+          images/museo-w800xh800.jpeg 1x,
+          images/museo-w1600xh1600.jpeg 2x,
+          images/museo-w2400xh2400.jpeg 3x"
+              media="(min-width: 1600px)">
+      <source srcset="
+          images/museo-w640xh640.jpeg 1x, 
+          images/museo-w1280xh1280.jpeg 2x,
+          images/museo-w1920xh1920.jpeg 3x"
+              media="(min-width: 1280px)">
+      <source srcset="
+          images/museo-w480xh480.jpeg 1x,
+          images/museo-w960xh960.jpeg 2x,
+          images/museo-w1440xh1440.jpeg 3x"
+              media="(min-width: 960px)">
+          <source srcset="
+          images/museo-w720xh405.jpeg 1x,
+          images/museo-w1440xh810.jpeg 2x,
+          images/museo-w2160xh1215.jpeg 3x"
+              media="(max-width: 720px)">
+
+
+<!-- Recuerda de averiguar si tienes que aplicar algo a css -->
+
+           <source srcset="
+           images/museo-w320xh180.jpeg 1x,
+           images/museo-w640xh360.jpeg 2x,
+           images/museo-w960xh540.jpeg 3x"
+              media="(max-width: 320px)">
+          <source srcset="
+           images/museo-w960xh540.jpeg 1x,
+           images/museo-w1920xh1080.jpeg 2x,
+           images/museo-w2880xh1621.jpeg 3x"
+              media="(max-width: 959px)">
+           <source srcset="
+           images/museo-w480xh270.jpeg 1x,
+           images/museo-w960xh540.jpeg 2x,
+           images/museo-w1440xh810.jpeg 3x"
+              media="(max-width: 480px)">
+                  <!-- El w es width y el l es length, acuerdate -->
+      <img src="images/museo-w960xh540.jpeg" alt="museo">
   </header>
 </body>
 

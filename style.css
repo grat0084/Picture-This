@@ -33,8 +33,19 @@ img {
   display: block;
 }
 
-@media (min-width: 960px) {
+@media screen and (max-width: 960px) {
   .header {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+/* .museum-landscape{
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex: 30%;
+  height: max-content;
+  width: 960px;
+} */
+
+/* Ignore this, try other things */
